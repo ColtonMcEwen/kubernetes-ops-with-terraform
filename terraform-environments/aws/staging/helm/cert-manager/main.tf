@@ -1,6 +1,6 @@
 locals {
-  aws_region         = "us-east-1"
-  environment_name   = "staging"
+  aws_region       = "us-east-1"
+  environment_name = "staging"
   tags = {
     ops_env              = "${local.environment_name}"
     ops_managed_by       = "terraform",
