@@ -96,7 +96,7 @@ module "eks" {
       desired_capacity = 2
       max_capacity     = 4
       min_capacity     = 1
-      instance_types   = ["t3.small"]
+      instance_types   = ["t3.medium"]
       additional_tags  = local.tags
       k8s_labels       = {}
     }
