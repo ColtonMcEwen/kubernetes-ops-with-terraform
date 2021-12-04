@@ -54,7 +54,7 @@ data "terraform_remote_state" "route53_hosted_zone" {
   backend = "remote"
   config = {
     # Update to your Terraform Cloud organization
-    organization = "managedkube"
+    organization = "coltondemo"
     workspaces = {
       name = "kubernetes-ops-staging-5-route53-hostedzone"
     }
