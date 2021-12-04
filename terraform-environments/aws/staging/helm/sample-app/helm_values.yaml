@@ -42,15 +42,15 @@ ingress:
           - api.k8s.staging.coltonmcewen.com
         secretName: tls-sample-app
 
-# hpa:
-#   enabled: true
-#   spec:
-#     scaleTargetRef:
-#       apiVersion: apps/v1
-#       kind: Deployment
-#       # Update to match the name of your deployment
-#       name: "sample-app-standard-application"
-#     minReplicas: 1
-#     maxReplicas: 4
-#     targetCPUUtilizationPercentage: 50
+hpa:
+  enabled: true
+  spec:
+    scaleTargetRef:
+      apiVersion: apps/v1
+      kind: Deployment
+      # Update to match the name of your deployment
+      name: "sample-app-standard-application"
+    minReplicas: 1
+    maxReplicas: 4
+    targetCPUUtilizationPercentage: 50
  
