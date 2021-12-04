@@ -3,7 +3,7 @@ variable "repository" {
 }
 
 variable "tag" {
-  default = "sample-app3"
+  default = "sample-app4"
 }
 
 variable "namespace" {
